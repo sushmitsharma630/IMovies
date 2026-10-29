@@ -1,0 +1,12 @@
+body { background: #f5f6fa; }
+.movie-card { transition: transform .15s; }
+.movie-card:hover { transform: translateY(-4px); }
+.screen { background: #adb5bd; color: #212529; text-align: center; padding: 6px; border-radius: 40px 40px 0 0; max-width: 500px; margin: 0 auto; font-size: 12px; letter-spacing: 6px; }
+.seat-map { display: flex; flex-direction: column; align-items: center; gap: 6px; overflow-x: auto; }
+.seat-row { display: flex; gap: 6px; align-items: center; }
+.row-label { width: 20px; font-weight: 600; color: #6c757d; }
+.seat { width: 30px; height: 30px; border: 1px solid #198754; background: #fff; color: #198754; border-radius: 6px 6px 2px 2px; font-size: 11px; padding: 0; display: inline-block; }
+.seat:hover:not(:disabled) { background: #d1e7dd; }
+.seat.selected { background: #198754; color: #fff; }
+.seat.booked { background: #adb5bd; border-color: #adb5bd; color: #fff; cursor: not-allowed; }
+.seat.legend { width: 18px; height: 18px; vertical-align: middle; }
